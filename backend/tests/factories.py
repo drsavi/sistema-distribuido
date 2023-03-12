@@ -1,14 +1,6 @@
 from factory import Factory, fuzzy
 
-from backend.schemas.dummy_test import DummyTest
-
-
-class DummyTestFactory(Factory):  # type: ignore[misc]
-    class Meta:
-        model = DummyTest
-
-    attribute = fuzzy.FuzzyText(length=20)
-
+from backend.schemas.filme_schema import FilmeTest
 
 class FilmeFactory(Factory):  # type: ignore[misc]
     class Meta:

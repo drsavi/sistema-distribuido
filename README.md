@@ -33,3 +33,5 @@
     Se precisar do valor de alguma credencial, peça a algum colega.
 
     python -m uvicorn backend.main:app --reload
+
+    Url swagger: http://localhost:8000/api/docs/
