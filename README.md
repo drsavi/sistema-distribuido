@@ -28,6 +28,8 @@
     pip install pymysql
     pip install pytest
     pip install factory-boy
+    pip install requests
+    pip install redis
     ```
 
     Se precisar do valor de alguma credencial, peça a algum colega.
