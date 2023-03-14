@@ -1,4 +1,7 @@
-# Projeto Teste
+# Sistema Distribuído
+
+A proposta do projeto é de simular um sistema distribuído onde o projeto seja executado em três terminais com diferentes portas e todos tenham acesso aos mesmos dados inseridos, realizando as requisições a partir de uma rota de inserção de filme e uma para acessar os filmes cadastrados, que serão salvos em memória pelo redis.
+
 
 ## Configuração rápida
 
