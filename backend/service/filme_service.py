@@ -1,4 +1,3 @@
-import requests
 from typing import List
 from fastapi import Depends
 from backend.database.models import FilmeDB
@@ -16,9 +15,3 @@ class FilmeService:
     def get_all(self) -> List[FilmeDB]:
         return self._dummy_repository.get_all()
     
-    def send_message(self, message: str):
-        response = requests.post("http://localhost:8081/messages", json={"message": message})
-        if response.status_code == 200:
-            return "Message sent successfully!"
-        else:
-            return f"Error sending message: {response.status_code}"

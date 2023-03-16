@@ -11,6 +11,7 @@ class ApiSettings(BaseSettings):
 class Environment(ApiSettings):
     db_main_uri: str = "mysql+pymysql://root:1234@127.0.0.1/projeto_teste"
     environment: str = "LOCAL"
+    redis_uri: str = "redis://localhost:6379"
 
 
 @lru_cache
