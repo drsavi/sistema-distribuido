@@ -11,15 +11,15 @@ A proposta do projeto é de simular um sistema distribuído onde o projeto seja 
 
 1. **A versão utilizada do Python é a 3.10**.
 
-    - Utilizando o [conda](https://docs.conda.io/en/latest/miniconda.html):
-    - Crie um novo ambiente virtual:
-      ```sh
-      conda env create -f environment.yml
-      ```
-    - Ative o ambiente virtual:
-      ```sh
-      conda activate projeto-teste
-      ```
+  - Utilizando o [conda](https://docs.conda.io/en/latest/miniconda.html):
+  - Crie um novo ambiente virtual:
+    ```sh
+    conda env create -f environment.yml
+    ```
+  - Ative o ambiente virtual:
+    ```sh
+    conda activate projeto-teste
+    ```
 
 
 1. Instale as dependências do backend:
@@ -35,8 +35,12 @@ A proposta do projeto é de simular um sistema distribuído onde o projeto seja 
     pip install redis
     ```
 
-    Se precisar do valor de alguma credencial, peça a algum colega.
-
-    python -m uvicorn backend.main:app --reload
+    python -m uvicorn backend.main:app --reload --port=8000
 
     Url swagger: http://localhost:8000/api/docs/
+
+1. Para executar o arquivo redis.yml (necessária instalação do docker):
+    ```
+    docker-compose -f redis.yml up -d
+    ```
+
