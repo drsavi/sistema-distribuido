@@ -33,6 +33,7 @@ A proposta do projeto é de simular um sistema distribuído onde o projeto seja 
     pip install factory-boy
     pip install requests
     pip install redis
+    pip install pymongo
     ```
 
     python -m uvicorn backend.main:app --reload --port=8000
